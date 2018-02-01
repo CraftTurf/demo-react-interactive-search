@@ -1,0 +1,21 @@
+.members {
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.name {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 5%;
+}
+
+.url {
+  width: 40%;
+}

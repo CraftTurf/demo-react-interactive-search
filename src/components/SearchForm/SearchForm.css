@@ -1,6 +1,7 @@
 .serchform {
-  margin: 0 auto;
-  width: 1024px;
+  width: 100%;
+  background: #ddd;
+  height: 100px;
 }
 
 .input {
@@ -10,5 +11,5 @@
   border: 1px solid #000;
   padding: 10px;
   font-size: 20px;
-  color: #ddd;
+  color: #666;
 }
