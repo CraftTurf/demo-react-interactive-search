@@ -3,9 +3,10 @@ import  React from 'react';
 
 import './Members.css';
 
-const Members = ({members}) => (
-
+const Members = ({members, search}) => (
     members.map(row => {
+      console.log("hello",search);
+
       const { id, login, url, avatar } = row;
       return(
         <div className="members">
