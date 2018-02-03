@@ -1,16 +1,15 @@
 import  React from 'react';
+import PropTypes from 'prop-types';
 
 
 import './Members.css';
 
-const Members = ({members, search}) => (
+const Members = ({members}) => (
     members.map(row => {
-      console.log("hello",search);
-
       const { id, login, url, avatar } = row;
       return(
-        <div className="members">
-          <div class="avatar" key={id}>
+        <div className="members" key={id}>
+          <div className="avatar">
             <img src={avatar} alt="hhh"  width="100px"/>
           </div>
           <div className="name">
@@ -23,6 +22,13 @@ const Members = ({members, search}) => (
      );
     })
 );
+
+Members.propTypes = {
+  id: PropTypes.number,
+  login: PropTypes.number,
+  avatar: PropTypes.string,
+  url: PropTypes.string
+}
 
 
 export default Members;
