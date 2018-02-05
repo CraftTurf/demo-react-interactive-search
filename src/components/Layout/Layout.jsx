@@ -1,4 +1,6 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
+
 import SearchForm from '../SearchForm/SearchForm';
 import Members from '../Members/Members';
 
@@ -21,7 +23,6 @@ class Layout extends React.Component {
   }
 
   render() {
-    console.log(this.state.search);
     let members = memberData;
     let search = this.state.search.trim().toLowerCase();
     if(search.length > 0){
@@ -43,6 +44,12 @@ class Layout extends React.Component {
       </section>
     )
   }
+}
+
+Layout.propTypes = {
+  members: PropTypes.object,
+  search: PropTypes.object,
+  onHandleChange: PropTypes.func
 }
 
 export default Layout;

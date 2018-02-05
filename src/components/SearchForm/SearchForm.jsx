@@ -15,7 +15,6 @@ const SearchForm = ({type, handleChange, search}) => (
       placeholder="Search ...."
       styles="input"
     />
-    <div>{search} {'hshshshs'}</div>
   </div>
 );
 

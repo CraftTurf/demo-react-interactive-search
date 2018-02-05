@@ -1,4 +1,5 @@
 import  React from 'react';
+import PropTypes from 'prop-types';
 
 const InputField = ({
   type,
@@ -21,5 +22,25 @@ const InputField = ({
     />
   </div>
 );
+
+InputField.propTypes = {
+  type: PropTypes.string,
+  onChange: PropTypes.func,
+  value: PropTypes.string,
+  placeholder: PropTypes.string,
+  onBlur: PropTypes.func,
+  onFocus:PropTypes.func,
+  className: PropTypes.string
+}
+
+InputField.default = {
+  type:'text',
+  onChange:() => {},
+  placeholder: 'Enter your text',
+  className: 'input',
+  onFocus:() => {},
+  onBlur:() => {},
+}
+
 
 export default InputField;
